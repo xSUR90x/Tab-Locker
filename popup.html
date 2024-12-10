@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tab locker with PIN</title>
+  <script src="popup.js"></script>
+  <style>
+    #urlEntry {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tab locker with PIN</h1>
+  <label for="main_pin">Enter 4-digit main PIN:</label>
+  <input type="password" id="main_pin" maxlength="4">
+
+  <button id="viewPinsButton">View Saved PINs</button>
+
+  <div id="urlEntry">
+    <label for="link">Enter the website URL:</label>
+    <input type="text" id="link">
+
+    <label for="pin">Enter 4-digit PIN:</label>
+    <input type="password" id="pin" maxlength="4">
+
+    <button id="save">Save</button>
+    <p id="success-message"></p>
+
+    <div id="pinList"></div>
+  </div>
+
+  <button id="forgetPinButton">Forgot Main PIN?</button>
+  <!--<div id="pinList"></div>--->
+</body>
+</html>
